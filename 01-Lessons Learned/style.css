@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: Monteserrat, sans-serif;
+  background-color: rgb(253, 251, 251);
+}
+
+/*  Cabeçalho, propriedades e configs  */
+#cabecalho {
+  color: whitesmoke;
+  background-color: rgb(73, 182, 117);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  z-index: 9;
+}
+
+#itens-cabecalho {
+  display: flex;
+  gap: 30px;
+}
+
+.cabecalho-itens {
+  color: whitesmoke;
+}
+
+/* Minha imagem e meu link */
+#minha_foto {
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+  z-index: 1;
+}
+
+element.offsetTop #table {
+  font-size: 0.5em;
+}
+
+#meu_link {
+  text-decoration: underline;
+  color: black;
+  position: absolute;
+  top: 363px;
+  left: 16px;
+  z-index: 2;
+}
+
+/* Parte com título de lições e as listas */
+h2 {
+  position: absolute;
+  top: 410px;
+  left: 15px;
+  z-index: 3;
+}
+
+#licoes_aprendidas {
+  position: absolute;
+  top: 70%;
+  left: 55px;
+  z-index: 4;
+}
+
+#licoes_a_aprender {
+  position: absolute;
+  top: 70%;
+  left: 200px;
+  z-index: 5;
+}
+
+.lado-esquerdo {
+  position: absolute;
+  top: 700px;
+  left: 15px;
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  line-height: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  z-index: 6;
+}
+.lado-direito {
+  position: absolute;
+  top: 700px;
+  left: 500px;
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  z-index: 7;
+}
+
+/* Rodapé final */
+#rodape {
+  position: absolute;
+  top: 1000px;
+  padding: 32px;
+  background-color: rgb(73, 182, 117);
+  font-family: Monteserrat, sans-serif;
+  font-size: 1em;
+  color: white;
+  z-index: 8;
+}
