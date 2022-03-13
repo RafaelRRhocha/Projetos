@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    display: flex;
+    gap: 30px;
+    padding: 130px 0;
+}

@@ -1,0 +1,29 @@
+.cartao-pokemon {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.cartao-pokemon .cartao-topo {
+    padding: 30px, 40px, 0;
+
+}
+
+.cartao-pokemon .cartao-nome {
+    margin-bottom: 5px;
+}
+
+.cartao-pokemon .tipo {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cartao-pokemon .detalhes {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
