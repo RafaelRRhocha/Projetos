@@ -1,12 +1,28 @@
+.fundo {
+  position: absolute;
+  right: 23%;
+  bottom: 0.8px;
+  width: 700px;
+  height: 600px;
+  background-color: #363636;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 5%;
+  z-index: -1;
+}
+
 .cartao-pokemon {
   display: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  width: 330px;
+  width: 350px;
+  z-index: 0;
 }
 
 .cartao-pokemon .cartao-topo {
+  background-image: url("../imagens/fundo-pokebola.png");
+  background-size: 100%;
   padding: 30px 40px 0;
+  z-index: 1;
 }
 
 .cartao-pokemon .nome {
@@ -93,7 +109,7 @@
 }
 
 .tipo-agua {
-  background-color: #00ffff;
+  background-color: #1E90FF;
 }
 
 .tipo-fantasma {
