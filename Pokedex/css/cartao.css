@@ -2,6 +2,7 @@
   display: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  width: 330px;
 }
 
 .cartao-pokemon .cartao-topo {
@@ -18,7 +19,8 @@
   opacity: 0.7;
   border-radius: 10px;
   padding: 2px 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .cartao-pokemon .detalhes {
@@ -29,15 +31,15 @@
 }
 
 .cartao-pokemon .cartao-imagem {
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
 }
 
 .cartao-pokemon img {
-    max-height: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+  max-height: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .cartao-pokemon:hover img {
   transform: scale(1.05);
@@ -62,41 +64,42 @@
 .cartao-pokemon .cartao-informacoes .status,
 .cartao-pokemon .cartao-informacoes .habilidades {
   padding: 0 10px;
-  width: 180px;
+  width: 150px;
+  max-height: 100px;
 }
 
 .cartao-pokemon .cartao-informacoes .habilidades ul li,
 .cartao-pokemon .cartao-informacoes .status ul li {
   border-bottom: 1px solid #c3c4c5;
-  padding: 0, 0 , 5px;
+  padding: 0, 0, 5px;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .cartao-pokemon.aberto {
-    display: block;
+  display: block;
 }
 
 .tipo-eletrico {
-    background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .tipo-grama {
-    background-color: #00FF7F;
+  background-color: #00ff7f;
 }
 
 .tipo-fogo {
-    background-color: #F08080;
+  background-color: #f08080;
 }
 
 .tipo-agua {
-    background-color: #00FFFF;
+  background-color: #00ffff;
 }
 
 .tipo-fantasma {
-    background-color: #9400D3;
+  background-color: #9400d3;
 }
 
 .tipo-dragao {
-    background-color: #8B0000;
+  background-color: #8b0000;
 }

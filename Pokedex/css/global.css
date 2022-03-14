@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
-    background-color: beige;
-    font-family: 'Poppins', sans-serif;
+  background-color: #dcdcdc;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pokedex {
-    display: flex;
-    gap: 30px;
-    padding: 130px 0;
+  display: flex;
+  gap: 30px;
+  padding: 80px 0;
 }
 
-.cabecalho-img {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 100px;
+.rodape img {
+    padding-right: 20px;
+}
+.rodape {
+    padding: 12px;
+    height: 50px;
+    border-top: 1px solid black;
+    color: black;
+    text-align: center;
 }
