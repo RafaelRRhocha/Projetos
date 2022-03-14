@@ -40,9 +40,7 @@
 	transition: all 0.3s;
 }
 .cartao-pokemon:hover img {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .cartao-pokemon .cartao-informacoes {
@@ -88,7 +86,7 @@
 }
 
 .tipo-fogo {
-    background-color: #B8860B;
+    background-color: #F08080;
 }
 
 .tipo-agua {
@@ -100,5 +98,5 @@
 }
 
 .tipo-dragao {
-    background-color: #E6E6FA;
+    background-color: #8B0000;
 }

@@ -20,18 +20,23 @@
   </head>
 
   <body>
+    <header class="cabecalho">
+      <a class="cabecalho-img" href="https://github.com/RafaelRRhocha/Projetos/tree/main/Pokedex" target="_blank">
+      <img src="imagens/git-hub-icon.svg" alt="github">
+      </a>
+    </header>
     <main>
       <section class="pokedex">
         <div class="cartoes-pokemon">
-          <div class="cartao-pokemon aberto tipo-grama">
+          <div class="cartao-pokemon aberto tipo-grama" id="cartao-bulbasaur">
             <div class="cartao-topo">
               <div class="detalhes">
-                <h2 class="nome">Bulbassauro</h2>
+                <h2 class="nome">Bulbasaur</h2>
                 <span>#001</span>
               </div>
               <span class="tipo">Grama e Venenoso</span>
               <div class="cartao-imagem">
-                <img src="imagens/bulbasaur.png" alt="Bulbassauro" />
+                <img src="imagens/bulbasaur.png" alt="Bulbasaur" />
               </div>
             </div>
 
@@ -57,15 +62,15 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-eletrico">
+          <div class="cartao-pokemon tipo-grama" id="cartao-ivysaur">
             <div class="cartao-topo">
               <div class="detalhes">
-                <h2 class="nome">Pikachu</h2>
-                <span>#025</span>
+                <h2 class="nome">Ivysaur</h2>
+                <span>#001</span>
               </div>
-              <span class="tipo">Elétrico</span>
+              <span class="tipo">Grama e Venenoso</span>
               <div class="cartao-imagem">
-                <img src="imagens/pikachu.png" alt="Pikachu" />
+                <img src="imagens/ivysaur.png" alt="Ivysaur" />
               </div>
             </div>
 
@@ -73,10 +78,10 @@
               <div class="status">
                 <h3>Status</h3>
                 <ul>
-                  <li>Nº na Pokédex #025</li>
-                  <li>Peso: 6,0 Kg</li>
-                  <li>Altura: 0,4 m</li>
-                  <li>Grupo de Ovos: Campo e Fada</li>
+                  <li>Nº na Pokédex #001</li>
+                  <li>Peso: 6,9 Kg</li>
+                  <li>Altura: 0,7 m</li>
+                  <li>Grupo de Ovos: Monstro e Grama</li>
                   <li>Habitat: Floresta</li>
                   <li>Geração: Primeira</li>
                 </ul>
@@ -84,14 +89,48 @@
               <div class="habilidades">
                 <h3>Habilidades</h3>
                 <ul>
-                  <li>Habilidade: Static</li>
-                  <li>Habilidade Oculta: Lightning Rod</li>
+                  <li>Habilidade: SuperCrescimento</li>
+                  <li>Habilidade Oculta: Clorofila</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fogo">
+          <div class="cartao-pokemon tipo-grama" id="cartao-venusaur">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Venusaur</h2>
+                <span>#001</span>
+              </div>
+              <span class="tipo">Grama e Venenoso</span>
+              <div class="cartao-imagem">
+                <img src="imagens/venusaur.png" alt="Venusaur" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+                <ul>
+                  <li>Nº na Pokédex #001</li>
+                  <li>Peso: 6,9 Kg</li>
+                  <li>Altura: 0,7 m</li>
+                  <li>Grupo de Ovos: Monstro e Grama</li>
+                  <li>Habitat: Floresta</li>
+                  <li>Geração: Primeira</li>
+                </ul>
+              </div>
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Habilidade: SuperCrescimento</li>
+                  <li>Habilidade Oculta: Clorofila</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-fogo" id="cartao-charmander">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Charmander</h2>
@@ -125,7 +164,109 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-agua">
+          <div class="cartao-pokemon tipo-fogo" id="cartao-charmeleon">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charmeleon</h2>
+                <span>#004</span>
+              </div>
+              <span class="tipo">Fogo</span>
+              <div class="cartao-imagem">
+                <img src="imagens/charmeleon.png" alt="Charmeleon" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+                <ul>
+                  <li>Nº na Pokédex #004</li>
+                  <li>Peso: 8,5 Kg</li>
+                  <li>Altura: 0,6 m</li>
+                  <li>Grupo de Ovos: Monstro e Dragão</li>
+                  <li>Habitat: Floresta</li>
+                  <li>Geração: Primeira</li>
+                </ul>
+              </div>
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Habilidade: Chama</li>
+                  <li>Habilidade Oculta: Poder Solar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-fogo" id="cartao-charizard">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charizard</h2>
+                <span>#004</span>
+              </div>
+              <span class="tipo">Fogo</span>
+              <div class="cartao-imagem">
+                <img src="imagens/charizard.png" alt="Charizard"/>
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+                <ul>
+                  <li>Nº na Pokédex #004</li>
+                  <li>Peso: 8,5 Kg</li>
+                  <li>Altura: 0,6 m</li>
+                  <li>Grupo de Ovos: Monstro e Dragão</li>
+                  <li>Habitat: Floresta</li>
+                  <li>Geração: Primeira</li>
+                </ul>
+              </div>
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Habilidade: Chama</li>
+                  <li>Habilidade Oculta: Poder Solar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-eletrico" id="cartao-pikachu">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Pikachu</h2>
+                <span>#025</span>
+              </div>
+              <span class="tipo">Elétrico</span>
+              <div class="cartao-imagem">
+                <img src="imagens/pikachu.png" alt="Pikachu" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+                <ul>
+                  <li>Nº na Pokédex #025</li>
+                  <li>Peso: 6,0 Kg</li>
+                  <li>Altura: 0,4 m</li>
+                  <li>Grupo de Ovos: Campo e Fada</li>
+                  <li>Habitat: Floresta</li>
+                  <li>Geração: Primeira</li>
+                </ul>
+              </div>
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Habilidade: Static</li>
+                  <li>Habilidade Oculta: Lightning Rod</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-agua" id="cartao-gyarados">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Gyarados</h2>
@@ -159,7 +300,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fantasma">
+          <div class="cartao-pokemon tipo-fantasma" id="cartao-gengar">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Gengar</h2>
@@ -193,7 +334,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-dragao">
+          <div class="cartao-pokemon tipo-dragao" id="cartao-dragonite">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Dragonite</h2>
@@ -231,32 +372,52 @@
 
         <nav class="listagem">
           <ul>
-            <li class="pokemon ativo">
-              <img src="imagens/cabeca-bulbasaur.png" alt="Cabeca-Bulbassauro">
-              <span>Bulbassauro</span>
+            <li class="pokemon ativo" id="bulbasaur">
+              <img src="imagens/cabeca-bulbasaur.png" alt="Cabeca-Bulbasaur">
+              <span>Bulbasaur</span>
             </li>
 
-            <li class="pokemon ">
-              <img src="imagens/cabeca-pikachu.png" alt="Cabeca-Pikachu">
-              <span>Pikachu</span>
+            <li class="pokemon ativo" id="ivysaur">
+              <img src="imagens/cabeca-ivysaur.png" alt="Cabeca-ivysaur">
+              <span>Ivysaur</span>
             </li>
 
-            <li class="pokemon">
+            <li class="pokemon ativo" id="venusaur">
+              <img src="imagens/cabeca-venusaur.png" alt="Cabeca-venusaur">
+              <span>Venusaur</span>
+            </li>
+
+            <li class="pokemon" id="charmander">
               <img src="imagens/cabeca-charmander.png" alt="Cabeca-Charmander">
               <span>Charmander</span>
             </li>
 
-            <li class="pokemon">
+            <li class="pokemon" id="charmeleon">
+              <img src="imagens/cabeca-charmeleon.png" alt="Cabeca-Charmeleon">
+              <span>Charmeleon</span>
+            </li>
+
+            <li class="pokemon" id="charizard">
+              <img src="imagens/cabeca-charizard.png" alt="Cabeca-Charizard">
+              <span>Charizard</span>
+            </li>
+
+            <li class="pokemon" id="pikachu">
+              <img src="imagens/cabeca-pikachu.png" alt="Cabeca-Pikachu">
+              <span>Pikachu</span>
+            </li>
+
+            <li class="pokemon" id="gyarados">
               <img src="imagens/cabeca-gyarados.png" alt="Cabeca-Gyarados">
               <span>Gyarados</span>
             </li>
 
-            <li class="pokemon">
+            <li class="pokemon" id="gengar">
               <img src="imagens/cabeca-gengar.png" alt="Cabeca-Gengar">
               <span>Gengar</span>
             </li>
 
-            <li class="pokemon">
+            <li class="pokemon" id="dragonite">
               <img src="imagens/cabeca-dragonite.png" alt="cabeca-dragonite">
               <span>Dragonite</span>
             </li>
@@ -264,5 +425,6 @@
         </nav>
       </section>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>

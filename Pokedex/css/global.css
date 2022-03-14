@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
-    background-color: #FFFAFA;
+    background-color: beige;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,4 +16,11 @@ main {
     display: flex;
     gap: 30px;
     padding: 130px 0;
+}
+
+.cabecalho-img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
 }
