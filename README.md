@@ -1,13 +1,13 @@
-olá! este é o README dos meus projetos!
-Abaixo estarei colocando o link de todos os meus projetos, espero que em breve esteja lotado!
-Fique a vontade para visitar quantos quiser!
+olá! este é o README dos meus projetos! <br>
+Abaixo estarei colocando o link de todos os meus projetos, espero que em breve esteja lotado! <br>
+Fique a vontade para visitar quantos quiser! <br> <br>
 
-Portfólio: https://rafaelrrhocha.github.io/Portfolio/
-Pokedex: https://rafaelrrhocha.github.io/Projetos/Pokedex/
+Portfólio: https://rafaelrrhocha.github.io/Portfolio/ <br>
+Pokedex: https://rafaelrrhocha.github.io/Projetos/Pokedex/ <br> <br>
 
-{
-Projetos da Trybe:
+{ <br>
+Projetos da Trybe: <br> <br>
 
-01-Lessons-Learned: https://rafaelrrhocha.github.io/Projetos/01-Lessons%20Learned/
+01-Lessons-Learned: https://rafaelrrhocha.github.io/Projetos/01-Lessons%20Learned/ <br> <br>
 
 }
