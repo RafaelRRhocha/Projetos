@@ -1,9 +1,7 @@
 .fundo {
   position: absolute;
-  right: 23%;
-  bottom: 0.8px;
+  height: 580px;
   width: 700px;
-  height: 600px;
   background-color: #363636;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 5%;
