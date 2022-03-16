@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Amarante');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&display=swap');
+
 
 body {
   background-color: #FF0000;
@@ -21,14 +22,14 @@ main {
 .cabecalho p {
   color: #C0C0C0;
   display: inline-block;
-  font-family: Amarante, sans-serif;
+  font-family: Acme, Poppins, sans-serif;
   font-size: 100px;
 }
 
 .pokebola{
-  position: absolute;
-  top: 20px;
-  left: 75px;
+  position: relative;
+  top: -100px;
+  left: 20px;
 }
 
 .pokedex {
@@ -37,9 +38,17 @@ main {
   padding: 70px 0;
 }
 
-.rodape img {
+.zoom {
     padding-right: 20px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
 .rodape {
     padding: 12px;
     height: 50px;
