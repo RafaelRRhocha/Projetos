@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Amarante');
 
 body {
   background-color: #FF0000;
@@ -12,6 +13,17 @@ main {
   justify-content: center;
 }
 
+.cabecalho {
+  background-color: #C0C0C0;
+}
+.cabecalho p {
+  color: #1C1C1C;
+  display: inline-block;
+  padding-left: 360px;
+  text-align: center;
+  font-family: Amarante, sans-serif;
+  font-size: 100px;
+}
 .pokedex {
   display: flex;
   gap: 30px;
