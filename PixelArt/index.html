@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/zeldaicon.ico" type="image/x-icon">
-    <title>PixelArt</title>
+    <title>PixelArt - Projeto</title>
 </head>
 <body>
     <main id="main-container">
         <h1 id="title">Paleta de Cores</h1>
+
+        <section id="color-palette">
+          <div id="black" class="color selected"></div>
+        </section>
+
+        <section id="generator">
+          <input type="number" name="size" id="board-size" min="1" max="50" placeholder="tamanho do quadro">
+          <button id="generate-board">VQV</button>
+        </section>
+
+        <section id="clear">
+          <button id="clear-board">Limpar</button>
+        </section>
+
+        <section id="pixel-board"></section>
     </main>
     <script src="script.js"></script>
-     <!-- <footer class="rodape">
+
+     <footer class="rodape">
         <a
           href="https://github.com/RafaelRRhocha"
           alt="Rafael-Rocha-git-hub"
@@ -39,6 +55,6 @@
           />
         </a>
         <p>Desenvolvido por Rafael Rocha - 2022</p>
-      </footer> -->
+      </footer>
 </body>
 </html>

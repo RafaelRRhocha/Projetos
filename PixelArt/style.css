@@ -1,52 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Acme, sans-serif;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-image: url("img/wallpaper-pixel-color.jpg");
-    background-size: 100%;
-    color: white;
-    font-size: 1.2em;
+  font-family: Acme, sans-serif;
+  background-image: url("img/wallpaper-pixel-color.jpg");
+  background-size: 100%;
+  color: white;
+  font-size: 1.2em;
 }
 
-h1 {
-    padding: 1%;
-    text-align: center;
+#title {
+  text-align: center;
+  font-family: Acme, sans-serif;
+  font-size: 400%;
+  padding: 20px;
+  color: SpringGreen;
+  text-shadow: 2px 2px 1px black;
 }
 
 #color-palette {
-    display: table-cell;
-    position: relative;
-    left: 543px;
-    top: 300px;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    background: white;
+  cursor: url("img/artist.png"), auto;
+  display: inline;
+  padding-left: 20px;
 }
-  
-.container-board {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-inline: auto;
-    margin-top: 3%;
-  }
+
+.color {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin-left: 1%;
+}
+
+#clear {
+  margin-top: -155px;
+  padding: 30px;
+}
+
+#black {
+  background-color: black;
+}
+
+#clear-board {
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#generator {
+  margin-top: 40px;
+  padding: 30px;
+}
+
+#board-size {
+  font-size: 20px;
+  width: 250px;
+}
+
+#generate-board {
+  font-size: 20px;
+}
+
+input {
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: Acme, sans-serif;
+}
+
+button {
+  background: #000080;
+  font-family: Acme, sans-serif;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  text-shadow: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #87cefa;
+  color: black;
+}
+
+#pixel-board {
+  cursor: url("img/artist.png"), auto;
+  display: inline-block;
+  position: absolute;
+  left: 475px;
+  top: 150px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: solid black 1px;
+  display: inline-block;
+  background-color: white;
+  margin-top: -5px;
+}
 
 .zoom {
-    padding-right: 20px;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+  padding-right: 20px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .zoom:hover {
@@ -54,8 +118,9 @@ h1 {
 }
 
 .rodape {
-    padding: 12px;
-    height: 50px;
-    border-top: 1px solid black;
-    text-align: center;
+  margin-top: 17%;
+  padding: 12px;
+  height: 50px;
+  text-align: center;
+  color: black;
 }
