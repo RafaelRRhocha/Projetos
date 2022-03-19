@@ -47,13 +47,17 @@ body {
   background-color: black;
 }
 
+#white {
+  background-color: white;
+}
+
 #clear-board {
   font-family: monospace;
   font-weight: 900;
   font-size: 20px;
 }
 
-#generator {
+#geradorDePixels {
   margin-top: 40px;
   padding: 30px;
 }
@@ -64,12 +68,12 @@ body {
   top: 70px;
 }
 
-#board-size, #btn-text {
+#btn-number, #btn-text {
   font-size: 20px;
   width: 250px;
 }
 
-#generate-board, #gerarCor {
+#gerarPixel, #gerarCor {
   font-size: 20px;
 }
 
