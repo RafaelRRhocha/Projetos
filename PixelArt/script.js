@@ -38,6 +38,7 @@ function modularGrid() {
       squares.addEventListener('click', colorGrid);
     }
   }
+  
 }
 modularGrid();
 generateBoard.addEventListener('click', modularGrid);
@@ -75,24 +76,26 @@ function clearBoard() {
 const button = document.querySelector('#clear-board');
 button.addEventListener('click', clearBoard);
 // fazer com que as cores da paleta sejam geradas automaticamente
+
 function randomColor() {
   // vi onde que fazia uma cor aleatória nesse site: https://css-tricks.com/snippets/javascript/random-hex-color/
   const noColorSquares = document.querySelectorAll('.color');
 
   for (let index = 0; index < noColorSquares.length; index += 1) {
-    const randomizeColor = Math.floor(Math.random() * 16777215).toString(16);
+    const randomizeColor = Math.floor(Math.random() * 2022).toString(16);
     if (noColorSquares[index].id !== 'black') {
       noColorSquares[index].style.backgroundColor = `#${randomizeColor}`;
     }
   }
 }
 randomColor();
-// alerta quando o input estiver sem numero;
-function attention() {
-  const input = document.getElementById('board-size');
 
-  if (input.value === '') {
+// alerta quando o input estiver sem numero;
+function alertInput() {
+  const entradaValor = document.getElementById('board-size');
+
+  if (entradaValor.value === '') {
     window.alert('Board inválido!');
   }
 }
-generateBoard.addEventListener('click', attention);
+generateBoard.addEventListener('click', alertInput);

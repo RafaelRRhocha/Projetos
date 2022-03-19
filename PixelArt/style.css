@@ -58,12 +58,18 @@ body {
   padding: 30px;
 }
 
-#board-size {
+#geradorDeCor {
+  position: absolute;
+  left: 26px;
+  top: 70px;
+}
+
+#board-size, #btn-text {
   font-size: 20px;
   width: 250px;
 }
 
-#generate-board {
+#generate-board, #gerarCor {
   font-size: 20px;
 }
 
