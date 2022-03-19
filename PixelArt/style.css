@@ -23,13 +23,24 @@ h1 {
     text-align: center;
 }
 
-.pixel {
-    display: table;
+#color-palette {
+    display: table-cell;
+    position: relative;
+    left: 543px;
+    top: 300px;
     border: 1px solid black;
     width: 40px;
     height: 40px;
     background: white;
 }
+  
+.container-board {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-inline: auto;
+    margin-top: 3%;
+  }
 
 .zoom {
     padding-right: 20px;
