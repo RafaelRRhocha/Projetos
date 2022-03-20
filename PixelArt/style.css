@@ -47,10 +47,6 @@ body {
   background-color: black;
 }
 
-#white {
-  background-color: white;
-}
-
 #clear-board {
   font-family: monospace;
   font-weight: 900;
@@ -66,14 +62,24 @@ body {
   position: absolute;
   left: 26px;
   top: 70px;
+  font-size: 1.4em;
 }
 
-#btn-number, #btn-text {
+#btn-color {
+  cursor: url("img/artist.png"), auto;
+  margin-top: -20px;
+  margin-left: 20px;
+  width: 62px;
+  height: 62px;
+
+}
+
+#btn-number{
   font-size: 20px;
   width: 250px;
 }
 
-#gerarPixel, #gerarCor {
+#gerarPixel {
   font-size: 20px;
 }
 
