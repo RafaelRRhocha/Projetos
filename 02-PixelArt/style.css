@@ -39,12 +39,8 @@ body {
 }
 
 #clear {
-  margin-top: -155px;
+  margin-top: -25px;
   padding: 30px;
-}
-
-#black {
-  background-color: black;
 }
 
 #clear-board {
@@ -53,10 +49,6 @@ body {
   font-size: 20px;
 }
 
-#geradorDePixels {
-  margin-top: 40px;
-  padding: 30px;
-}
 
 #geradorDeCor {
   position: absolute;
@@ -66,6 +58,7 @@ body {
 }
 
 #btn-color {
+  background-color: black;
   cursor: url("img/artist.png"), auto;
   margin-top: -20px;
   margin-left: 20px;
@@ -74,14 +67,15 @@ body {
 
 }
 
+#white {
+  background-color: white;
+}
+
 #board-size{
   font-size: 20px;
   width: 250px;
 }
 
-#generate-board {
-  font-size: 20px;
-}
 
 input {
   border-radius: 10px;
@@ -134,7 +128,7 @@ button:hover {
 }
 
 .rodape {
-  margin-top: 17%;
+  margin-top: 18%;
   padding: 12px;
   height: 50px;
   text-align: center;
