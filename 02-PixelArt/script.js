@@ -25,8 +25,25 @@ function colorFunction() {
 }
 colorFunction();
 
+const idBtn = document.querySelector('#generate-board');
+idBtn.addEventListener('click', gerarPixels);
+
 function gerarPixels() {
-  const tamanho = 9;
+  const classPixel = document.querySelector('#pixel-board');
+  classPixel.innerHTML = '';
+
+  const idInput = document.querySelector('#board-size');
+  let valueInput = idInput.value;
+  let tamanho = valueInput;
+
+  if (tamanho === '' || tamanho <= 0) {
+    alert('Board inválido!');
+    tamanho = 5;
+  } else if (tamanho <= 5) {
+    tamanho = 5;
+  } else if (tamanho >= 50) {
+    tamanho = 50;
+  }
   for (let boardQuadro = 0; boardQuadro < tamanho; boardQuadro += 1) {
     const divQuadro = document.querySelector('#pixel-board');
     const divLinha = document.createElement('div');
@@ -63,6 +80,7 @@ function pintarGrid() {
   //Fiz esse exercício com a ajuda da colega giovanna morais, links que usamos de referencia:
   //https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
   //https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue
+  //Referencia das arrow functions: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
   const pixelGrid = document.getElementsByClassName('pixel');
   for (let pixelColor = 0; pixelColor < pixelGrid.length; pixelColor += 1) {
     pixelGrid[pixelColor].addEventListener('click', () => {

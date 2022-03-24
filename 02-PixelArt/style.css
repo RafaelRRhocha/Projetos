@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Referencia uso de variáveis: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties
+(Eu uso para definir a paleta de cores do projeto ;) */
+:root {
+  --light: #f5fffa;
+  --dark: #000000;
+  --blueBtn: #000080;
+  --lightBlueBtn: #87cefa;
+}
 
 * {
   margin: 0;
@@ -9,9 +18,9 @@
 
 body {
   font-family: Acme, sans-serif;
-  background-image: url("img/wallpaper-pixel-color.jpg");
+  background-image: url('img/wallpaper-pixel-color.jpg');
   background-size: 100%;
-  color: white;
+  color: var(--light);
   font-size: 1.2em;
 }
 
@@ -25,9 +34,9 @@ body {
 }
 
 #color-palette {
-  cursor: url("img/artist.png"), auto;
+  cursor: url('img/artist.png'), auto;
   display: inline;
-  padding-left: 20px;
+  padding-left: 490px;
 }
 
 .color {
@@ -39,8 +48,12 @@ body {
 }
 
 #clear {
-  margin-top: -25px;
-  padding: 30px;
+  margin-top: -40px;
+  margin-left: 750px;
+}
+
+#black {
+  background-color: var(--dark);
 }
 
 #clear-board {
@@ -49,37 +62,27 @@ body {
   font-size: 20px;
 }
 
-
-#geradorDeCor {
-  position: absolute;
-  left: 26px;
-  top: 70px;
-  font-size: 1.4em;
+#geradorDePixels {
+  margin-top: 20px;
+  padding-left: 400px;
 }
 
 #btn-color {
-  background-color: black;
-  cursor: url("img/artist.png"), auto;
-  margin-top: -20px;
+  cursor: url('img/artist.png'), auto;
+  margin-top: -10px;
   margin-left: 20px;
   width: 62px;
   height: 62px;
-
 }
 
-#black {
-  background-color: black;
-}
-
-#white {
-  background-color: white;
-}
-
-#board-size{
+#board-size {
   font-size: 20px;
   width: 250px;
 }
 
+#generate-board {
+  font-size: 20px;
+}
 
 input {
   border-radius: 10px;
@@ -88,10 +91,10 @@ input {
 }
 
 button {
-  background: #000080;
+  background: var(--blueBtn);
   font-family: Acme, sans-serif;
-  color: #fff;
-  border: 1px solid #eee;
+  color: var(--light);
+  border: 1px solid var(--light);
   border-radius: 20px;
   text-shadow: none;
   padding: 5px 10px;
@@ -99,16 +102,19 @@ button {
 }
 
 button:hover {
-  background: #87cefa;
-  color: black;
+  background: var(--lightBlueBtn);
+  color: var(--dark);
 }
 
 #pixel-board {
-  cursor: url("img/artist.png"), auto;
+  min-width: 5px;
+  min-height: 5px;
+  max-height: 50px;
+  cursor: url('img/artist.png'), auto;
   display: inline-block;
   position: absolute;
-  left: 475px;
-  top: 150px;
+  left: 550px;
+  top: 300px;
 }
 
 .pixel {
@@ -132,9 +138,9 @@ button:hover {
 }
 
 .rodape {
-  margin-top: 18%;
+  margin-top: 20%;
   padding: 12px;
   height: 50px;
   text-align: center;
-  color: black;
+  color: var(--dark);
 }

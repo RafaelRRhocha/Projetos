@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/zeldaicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/zeldaicon.ico" type="image/x-icon" />
     <title>PixelArt - Projeto</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <main id="main-container">
-        <h1 id="title">PixelArt Creator</h1>
+      <h1 id="title">Paleta de Cores</h1>
 
-        <section id="color-palette">
-          <div id="black" class="color selected"></div>
-            <div id="white" class="color"></div>
-        </section>
+      <section id="color-palette">
+        <!-- <input class="color" type="color" value="#FFFFFF" id="btn-color" /> -->
+        <div id="black" class="color selected"></div>
+      </section>
 
-        <section id="clear">
-          <button id="clear-board">Limpar</button>
-        </section>
+      <section id="geradorDePixels">
+        <input
+          
+          type="number"
+          id="board-size"
+          min="1"
+          max="50"
+          placeholder="tamanho do quadro"
+        />
+        <button id="generate-board">VQV</button>
+      </section>
 
-        <section id="pixel-board"></section>
+      <section id="clear">
+        <button id="clear-board">Limpar</button>
+      </section>
+
+      <section id="pixel-board"></section>
     </main>
 
-     <footer class="rodape">
-        <a
-          href="https://github.com/RafaelRRhocha"
-          alt="Rafael-Rocha-git-hub"
-          target="_blank"
-        >
-          <img
-            class="zoom"
-            src="img/git-hub-icon.svg"
-            alt="github"
-            width="80px"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rafael-rhocha/"
-          alt="Rafael-Rocha-linkedin"
-          target="_blank"
-        >
-          <img
-            class="zoom"
-            src="img/icons8-linkedin.svg"
-            alt="linkedin"
-            width="80px"
-          />
-        </a>
-        <p>Desenvolvido por Rafael Rocha - 2022</p>
-      </footer>
+    <footer class="rodape">
+      <a
+        href="https://github.com/RafaelRRhocha"
+        alt="Rafael-Rocha-git-hub"
+        target="_blank"
+      >
+        <img
+          class="zoom"
+          src="img/git-hub-icon.svg"
+          alt="github"
+          width="80px"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rafael-rhocha/"
+        alt="Rafael-Rocha-linkedin"
+        target="_blank"
+      >
+        <img
+          class="zoom"
+          src="img/icons8-linkedin.svg"
+          alt="linkedin"
+          width="80px"
+        />
+      </a>
+      <p>Desenvolvido por Rafael Rocha - 2022</p>
+    </footer>
 
-      <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
