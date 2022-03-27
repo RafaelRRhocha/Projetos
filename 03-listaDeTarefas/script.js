@@ -17,7 +17,7 @@ enterButton.addEventListener('click', () => {
 });
 
 enterInput.addEventListener('keypress', () => {
-  if (inputLength() > 0 && event.which === 13) {
+  if (inputLength() > 0 && event.keyCode === 13) {
     criarTarefas();
   }
 });
