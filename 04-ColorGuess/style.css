@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap') ;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightcyan;
+  font-family: Rubik, sans-serif;
+}
+
+.ball {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.ball:hover {
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
