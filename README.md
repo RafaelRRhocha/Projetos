@@ -10,3 +10,4 @@ Projetos da Trybe: <br> <br>
 
 01-Lessons-Learned: https://rafaelrrhocha.github.io/Projetos/01-Lessons%20Learned/ <br>
 02-PixelArt: https://rafaelrrhocha.github.io/Projetos/PixelArt/ <br>
+03-To-do List: https://rafaelrrhocha.github.io/Projetos/03-listaDeTarefas/ <br>
