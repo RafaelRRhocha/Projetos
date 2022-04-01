@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Signika, sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  padding: 10px;
+  width: 90px;
+}
+
+#trybewarts-header-title {
+  text-align: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 7px;
+  width: 35%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 675px;
+}
+
+.ajustes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.hr {
+  margin: 40px auto;
+  background-color: rgb(50, 167, 145);
+  width: 95%;
+  height: 1px;
+}
+
+.family-section {
+  display: flex;
+  gap: 30px;
+  margin: 15px 0 50px 30px;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+}
+
+.family input {
+  display: flex;
+  flex-direction: row;
+}
+
+.check {
+  text-align: center;
+}
+
+#label-rate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.avaliacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 50px;
+}
+
+#input-name , #input-lastname , #input-email , #house, #label-family , #label-content {
+  display: flex;
+  max-width: 260px;
+}
+
+textarea {
+  max-width: 80%;
+  max-height: 18%;
+  margin-bottom: 35px;
+}
+
+#label-infos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#submit-btn {
+  margin: 0 auto;
+  width: 95%;
+}
+
+#trybewarts-forms-logo {
+  position: relative;
+  right: -23px;
+  height: 500px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  background-color: rgb(0, 114, 95);
+}
