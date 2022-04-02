@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
-
+/* Configurações Gerais */
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: Signika, sans-serif;
+  font-family: Chelsea Market, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
+/* Cabeçalho: Logo, Título e Login */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -21,11 +23,7 @@
 
 .trybewarts-header-logo {
   padding: 10px;
-  width: 90px;
-}
-
-#trybewarts-header-title {
-  text-align: center;
+  width: 80px;
 }
 
 .trybewarts-login {
@@ -34,12 +32,14 @@
   width: 35%;
 }
 
+/* Ajustes Para o conteúdo Principal */
 main {
   display: flex;
   align-items: center;
   padding: 20px;
 }
 
+/* Form Princial */
 #evaluation-form {
   display: flex;
   flex-direction: column;
@@ -47,22 +47,23 @@ main {
   width: 675px;
 }
 
-.ajustes {
+/* Parte que contém os inputs de nome, sobrenome, email e a seleção de casas */
+.primeira-parte {
   display: flex;
   justify-content: center;
   gap: 40px;
   margin-bottom: 10px;
 }
 
-.hr {
-  margin: 40px auto;
-  background-color: rgb(50, 167, 145);
-  width: 95%;
-  height: 1px;
+#input-name , #input-lastname , #input-email , #house {
+  display: flex;
+  max-width: 260px;
 }
 
-.family-section {
+/* Conteúdo do meio, input de familía e de conteúdo */
+.center-content {
   display: flex;
+  justify-content: center;
   gap: 30px;
   margin: 15px 0 50px 30px;
 }
@@ -70,17 +71,22 @@ main {
 .family {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
 }
 
-.family input {
-  display: flex;
-  flex-direction: row;
+#label-content {
+  margin-bottom: 13px;
 }
 
-.check {
-  text-align: center;
+.tecnologias {
+  justify-content: right;
+  padding: 10px;
+  max-width: 60%;
 }
 
+/* Input de Avaliação ao Forms */
 #label-rate {
   display: flex;
   justify-content: center;
@@ -95,33 +101,35 @@ main {
   margin-bottom: 50px;
 }
 
-#input-name , #input-lastname , #input-email , #house, #label-family , #label-content {
-  display: flex;
-  max-width: 260px;
-}
-
-textarea {
+/* TextArea com comentários sobre o forms */
+textarea , .textarea {
   max-width: 80%;
-  max-height: 18%;
-  margin-bottom: 35px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  resize: none;
 }
 
+/* Area do checkbox e do input submit */
 #label-infos {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 8px;
+  margin: 45px 10px 20px;
 }
 
-#submit-btn {
-  margin: 0 auto;
-  width: 95%;
-}
-
+/* Imagem trybewarts */
 #trybewarts-forms-logo {
-  position: relative;
-  right: -23px;
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 50px;
   height: 500px;
+}
+
+/* Linha De Divisão do Conteúdo */
+.hr {
+  margin: 25px auto;
+  background-color: rgb(50, 167, 145);
+  width: 95%;
+  height: 1px;
 }
 
 footer {

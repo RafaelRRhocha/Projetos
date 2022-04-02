@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Trybewarts</title>
   </head>
   <body>
@@ -43,8 +44,9 @@
 
     <main class="container">
       <form action="" method="get" id="evaluation-form">
+
         <section class="first-content">
-        <div class="ajustes">
+        <div class="primeira-parte">
           <input
             type="text"
             class="form-control"
@@ -61,7 +63,7 @@
           />
         </div>
 
-        <div class="ajustes">
+        <div class="primeira-parte">
           <input
             class="form-control"
             type="email"
@@ -71,46 +73,54 @@
           />
 
           <select name="" id="house" class="form-select">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            <option value="Gitnória" id="gitnoria-house">Casa: Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Casa: Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Casa: Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Casa: Pytherina</option>
           </select>
         </div>
       </section>
 
         <div class="hr"></div>
 
-        <section class="family-section">
+        <section class="center-content">
           <div class="family">
             <label for="" id="label-family">Qual sua família?</label>
-            <input
+            <label for="" id="frontEnd">
+              <input
               type="radio"
               name="family"
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 checkForm selectedFamily"
               value="Frontend"
             />
             Frontend
-            <input
+            </label>
+
+            <label for="" id="BackEnd">
+              <input
               type="radio"
               name="family"
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 checkForm"
               value="Backend"
             />
-            Backend
-            <input
+            BackEnd
+            </label>
+
+            <label for="" id="FullStack">
+              <input
               type="radio"
               name="family"
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 checkFamily"
               value="FullStack"
             />
             FullStack
+            </label>
           </div>
 
-          <div class="check">
+          <div class="tecnologias">
             <label for="" id="label-content">
               Qual conteúdo você está com mais vontade de aprender?
             </label>
@@ -118,7 +128,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="HoFs"
             />
             HoFs
@@ -126,7 +136,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="Jest"
             />
             Jest
@@ -134,7 +144,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="Promises"
             />
             Promises <br />
@@ -142,7 +152,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="React"
             />
             React
@@ -150,7 +160,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="SQL"
             />
             SQL
@@ -158,7 +168,7 @@
               type="checkbox"
               name=""
               id=""
-              class="form-check-input mt-0"
+              class="form-check-input mt-0 subject"
               value="Python"
             />
             Python
@@ -166,15 +176,14 @@
         </section>
 
         <div class="hr"></div>
-        
-        <section class="middle-content">
-        <label for="" id="label-rate"> Como você avalia a Trybewarts? </label>
 
+        <section class="last-content">
+        <label for="" id="label-rate"> Como você avalia a Trybewarts? </label>
         <div class="avaliacao">
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota selectedNota"
             id=""
             value="1"
           />
@@ -182,7 +191,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="2"
           />
@@ -190,7 +199,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="3"
           />
@@ -198,7 +207,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="4"
           />
@@ -206,7 +215,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="5"
           />
@@ -214,7 +223,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="6"
           />
@@ -222,7 +231,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="7"
           />
@@ -230,7 +239,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="8"
           />
@@ -238,7 +247,7 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="9"
           />
@@ -246,16 +255,15 @@
           <input
             type="radio"
             name="rate"
-            class="form-check-input mt-0"
+            class="form-check-input mt-0 checkNota"
             id=""
             value="10"
           />
           10
         </div>
-      </section>  
-
-        <section class="last-content">
+        
         <label for="" class="textarea"> Deixe seu comentário: </label>
+        <span id="counter">500</span>
         <textarea
           class="form-control"
           name=""
@@ -274,10 +282,9 @@
           />
         </label>
       </section>
-      <button type="submit" id="submit-btn" class="btn btn-success">Enviar</button>
+        <button type="submit" id="submit-btn" class="btn btn-success">Enviar</button>
       </form>
-
-      <div class="img-trybe">
+      <div class="removeImg">
         <img
           src="images/trybewarts-colored.svg"
           alt=""
@@ -285,11 +292,9 @@
         />
       </div>
     </main>
-
     <footer>
       <span>Direitos reservados à Trybewarts©</span>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
