@@ -21,14 +21,17 @@ login();
 function habilitandoBtn() {
   const pegarCheckBox = document.querySelector('#agreement');
   const pegarBtnSubmit = document.querySelector('#submit-btn');
+  const pegarSeletor = document.querySelector('.checkFinish');
   pegarBtnSubmit.disabled = true;
 
-  pegarCheckBox.addEventListener('click', () => {
+  pegarCheckBox.addEventListener('click', (event) => {
     const constCheck = pegarCheckBox.value;
 
-    if (constCheck === null) {
+    pegarCheckBox.classList.remove('checkFinish');
+
+    if (constCheck === pegarSeletor) {
       pegarBtnSubmit.disabled = true;
-    } else if (constCheck !== null) {
+    } else if (constCheck !== pegarSeletor) {
       pegarBtnSubmit.disabled = false;
     }
   });
