@@ -43,6 +43,7 @@ function verificarCores() {
 }
 verificarCores();
 
+
 window.onload = () => {
   setarCores();
 };
