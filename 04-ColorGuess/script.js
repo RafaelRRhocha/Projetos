@@ -4,6 +4,7 @@ const pegarAnswer = document.querySelector('#answer');
 const pegarScore = document.querySelector('#score');
 let score = 0;
 
+
 document.querySelector('#reset-game').addEventListener('click', () => {
   pegarAnswer.innerText = 'Escolha uma cor';
   window.onload();
@@ -42,7 +43,6 @@ function verificarCores() {
   });
 }
 verificarCores();
-
 
 window.onload = () => {
   setarCores();
