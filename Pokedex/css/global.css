@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.cabecalho {
+.cabecalho, h1 {
   text-align: center;
   background-color: #363636;
 }
