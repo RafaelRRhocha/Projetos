@@ -1,5 +1,7 @@
 .fundo {
   position: absolute;
+  top: 40%;
+  left: 23%;
   height: 580px;
   width: 700px;
   background-color: #363636;
@@ -94,26 +96,38 @@
   display: block;
 }
 
-.tipo-eletrico {
-  background-color: #ff0000;
+.listagem {
+  max-width: 200px;
+  max-height: 500px;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
-.tipo-grama {
-  background-color: #00ff7f;
+.listagem .pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background-color: #68727a;
+  color: white;
+  padding: 0, 5px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  min-height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.15s ease-in-out;
+}
+.listagem .pokemon:hover {
+  transform: scale(1.05);
 }
 
-.tipo-fogo {
-  background-color: #f08080;
+.listagem .pokemon img {
+  width: 25%;
+  border-radius: 50%;
 }
 
-.tipo-agua {
-  background-color: #1E90FF;
+.listagem .pokemon.ativo {
+  background-color: #00BFFF;
 }
 
-.tipo-fantasma {
-  background-color: #9400d3;
-}
-
-.tipo-dragao {
-  background-color: #8b0000;
-}
