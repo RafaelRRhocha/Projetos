@@ -10,11 +10,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/cartao.css" />
-    <link rel="stylesheet" href="css/listagem.css" />
-    <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/pokes.css" />
     <link
       rel="shortcut icon"
       href="imagens/favicon-pokebola.ico"
@@ -41,9 +39,9 @@
 
     <main>
       <div class="fundo"></div>
-      <section class="pokedex">
+      <section class="pokedexCart">
         <div class="cartoes-pokemon">
-          <div class="cartao-pokemon aberto tipo-grama" id="cartao-bulbasaur">
+          <div class="cartao-pokemon aberto grass" id="cartao-bulbasaur">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Bulbasaur</h2>
@@ -75,7 +73,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-grama" id="cartao-ivysaur">
+          <div class="cartao-pokemon grass" id="cartao-ivysaur">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Ivysaur</h2>
@@ -107,7 +105,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-grama" id="cartao-venusaur">
+          <div class="cartao-pokemon grass" id="cartao-venusaur">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Venusaur</h2>
@@ -139,7 +137,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fogo" id="cartao-charmander">
+          <div class="cartao-pokemon fire" id="cartao-charmander">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Charmander</h2>
@@ -171,7 +169,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fogo" id="cartao-charmeleon">
+          <div class="cartao-pokemon fire" id="cartao-charmeleon">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Charmeleon</h2>
@@ -203,7 +201,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fogo" id="cartao-charizard">
+          <div class="cartao-pokemon fire" id="cartao-charizard">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Charizard</h2>
@@ -235,7 +233,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-agua" id="cartao-squirtle">
+          <div class="cartao-pokemon water" id="cartao-squirtle">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Squirtle</h2>
@@ -267,7 +265,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-agua" id="cartao-wartortle">
+          <div class="cartao-pokemon water" id="cartao-wartortle">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Wartortle</h2>
@@ -299,7 +297,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-agua" id="cartao-blastoise">
+          <div class="cartao-pokemon water" id="cartao-blastoise">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Blastoise</h2>
@@ -331,7 +329,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-eletrico" id="cartao-pikachu">
+          <div class="cartao-pokemon electric" id="cartao-pikachu">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Pikachu</h2>
@@ -363,7 +361,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-agua" id="cartao-gyarados">
+          <div class="cartao-pokemon water" id="cartao-gyarados">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Gyarados</h2>
@@ -395,7 +393,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-fantasma" id="cartao-gengar">
+          <div class="cartao-pokemon ghost" id="cartao-gengar">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Gengar</h2>
@@ -427,7 +425,7 @@
             </div>
           </div>
 
-          <div class="cartao-pokemon tipo-dragao" id="cartao-dragonite">
+          <div class="cartao-pokemon dragon" id="cartao-dragonite">
             <div class="cartao-topo">
               <div class="detalhes">
                 <h2 class="nome">Dragonite</h2>
@@ -529,6 +527,9 @@
           </ul>
         </nav>
       </section>
+      <div class="container">
+        <ul data-js="pokedex" class="pokedex"></ul>
+      </div>
     </main>
     <script src="scripts.js"></script>
 
