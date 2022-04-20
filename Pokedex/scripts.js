@@ -31,6 +31,28 @@ const buscarPokemon = () => {
 
   Promise.all(pokemonPromisses) 
     .then(pokemons => {
+
+      const modal =  pokemons.reduce((accu, poke) => {
+
+        accu += `
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">${poke.name}</h5>
+            </div>
+              <div class="modal-body">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${poke.id}.svg" alt="${poke.name}">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>`
+          return accu;
+      }, '');
+      const modalPrin = document.querySelector('[data-js="modals"]');
+      modalPrin.innerHTML = modal;
+
       const liPoke = pokemons.reduce((acc, pokes) => {
 
         const types = pokes.types.map(typeInfo => typeInfo.type.name);
@@ -39,7 +61,8 @@ const buscarPokemon = () => {
           <li class="card ${types[0]}">
             <img class="card-image" alt="${pokes.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokes.id}.svg"/>
             <h2 class="card-title">#${pokes.id} - ${pokes.name}</h2>
-            <p class="card-subtitle">${types.join(' | ')}</p>
+            <p class="card-subtitle">${types.join(' / ')}</p>
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pokeModal">Saiba Mais</button>
           </li>`
         return acc;
       }, '')
