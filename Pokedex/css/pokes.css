@@ -41,9 +41,13 @@ li p {
 }
 
 .modal {
-	display: flex;
-	justify-content: center;
 	text-transform: capitalize;
+}
+
+.modal-body p {
+	text-align: center;
+	margin-top: 18px;
+	font-weight: bolder;
 }
 
 .card-title {

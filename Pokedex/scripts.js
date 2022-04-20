@@ -33,16 +33,21 @@ const buscarPokemon = () => {
     .then(pokemons => {
 
       const modal =  pokemons.reduce((accu, poke) => {
+        const typesp = poke.types.map(typeInfo => typeInfo.type.name);
 
         accu += `
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-xl ${typesp[0]}">
             <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${poke.name}</h5>
             </div>
               <div class="modal-body">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${poke.id}.svg" alt="${poke.name}">
-              </div>
+                <p> Tipagem: ${typesp.join(' / ')} <br>
+                Tipagem: ${typesp.join(' / ')} <br>
+                Tipagem: ${typesp.join(' / ')} <br>
+                </p>
+                </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
               </div>
