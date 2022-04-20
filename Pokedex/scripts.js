@@ -45,7 +45,6 @@ const buscarPokemon = () => {
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${poke.id}.svg" alt="${poke.name}">
                 <p> Tipagem: ${typesp.join(' / ')} <br>
                 Tipagem: ${typesp.join(' / ')} <br>
-                Tipagem: ${typesp.join(' / ')} <br>
                 </p>
                 </div>
               <div class="modal-footer">
