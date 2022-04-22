@@ -114,6 +114,8 @@ add([text('Inimigos Destruidos:', 15), pos(500,30)])
 
 add([text('Level:' + parseInt(level), 15), pos(500,110)])
 
+add([text('Desenvolvido por Rafael Rocha - 2022', 10), pos(500,380)])
+
 const scoreLabel = add([
     text('0'),
     pos(800,30),
