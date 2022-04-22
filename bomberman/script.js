@@ -58,7 +58,7 @@ scene('game', ({level, score}) => {
   const maps = [
     [
       'aaaaaaaaaaaaaaa',
-      'azzzz  *zzzzzda',
+      'azzzz *  zzzzda',
       'azazazazazazaza',
       'azzzzzzzzzzzzza',
       'azazazazazaza a',
@@ -66,8 +66,8 @@ scene('game', ({level, score}) => {
       'azazazazazaza a',
       'a zzzzzzzzzzz a',
       'a azazazazazada',
-      'a  zzzz* zzzzza',
-      'a azazazazazaza',
+      'a  zzzzzzzzzzza',
+      'a azaza  & zaza',
       'azzzzzzzzzzzzza',
       'azazazazazazaza',
       'azzzzz   &   za',
