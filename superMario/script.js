@@ -50,8 +50,8 @@ scene('game', ({ level, score, big }) => {
         `=                                    =`,
         `=                                    =`,
         `=                                    =`,
-        `=                      %             =`,
         `=                                    =`,
+        `=                      %             =`,
         `=                                    =`,
         `=      %      =*=%=                  =`,
         `=                                    =`,
@@ -144,7 +144,8 @@ scene('game', ({ level, score, big }) => {
 
   add([text('level: ' +parseInt(level + 1), 10), pos(135, 10)])
 
-  add([text('Controles: (setinhas do teclado) // Para passar de fase aperte Down(seta pra baixo)', 10), pos(25, 370)])
+  add([text('Controles: (setinhas do teclado) // Para passar de fase aperte Down(seta pra baixo)', 9), pos(25, 370)])
+  add([text('Desenvolvido por Rafael Rocha - 2022', 8), pos(25, 385)])
 
   function big(){
     return {
