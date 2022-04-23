@@ -36,15 +36,19 @@ const buscarPokemon = () => {
         const typesp = poke.types.map(typeInfo => typeInfo.type.name);
 
         accu += `
-          <div class="modal-dialog modal-xl ${typesp[0]}">
+          <div class="modal-dialog modal-lg ${typesp[0]}">
             <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${poke.name}</h5>
             </div>
               <div class="modal-body">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${poke.id}.svg" alt="${poke.name}">
-                <p> Tipagem: ${typesp.join(' / ')} <br>
+                <p>
+                Id: #${poke.id} <br>
+                Peso: ${poke.weight}kg <br>
                 Tipagem: ${typesp.join(' / ')} <br>
+                Habilidade: ${poke.abilities[0].ability.name} <br>
+                Ataque-Principal: ${poke.moves[0].move.name} <br>
                 </p>
                 </div>
               <div class="modal-footer">

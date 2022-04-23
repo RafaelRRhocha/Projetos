@@ -44,9 +44,13 @@ li p {
 	text-transform: capitalize;
 }
 
+.modal-body img {
+	margin: 50px 1px 1px 50px;
+	height: 130px;
+}
+
 .modal-body p {
 	text-align: center;
-	margin-top: 18px;
 	font-weight: bolder;
 }
 
