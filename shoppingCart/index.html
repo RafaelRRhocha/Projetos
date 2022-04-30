@@ -8,25 +8,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <script src="./helpers/fetchItem.js" defer></script>
-    <script src="./helpers/fetchProducts.js" defer></script>
-    <script src="./helpers/saveCartItems.js" defer></script>
-    <script src="./helpers/getSavedCartItems.js" defer></script>
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container-title">
-        <span class="title"><strong>Trybe</strong>Shopping</span>
+        <span class="title"><strong>Shopping</strong>Cart</span>
       </div>
       <i class="material-icons" style="font-size:45px;">shopping_cart</i>
       <span class="count"></span>
-      <div class="container-cartTitle">
-        <span class="cart__title">Meu carrinho</span>
-      </div>
+      <a href="https://rafaelrrhocha.github.io/Portfolio/" target="_blank">About me</a>
     </header>
 
     <main>
@@ -35,9 +30,21 @@
         <section class="cart">
           <ol class="cart__items"></ol>
           <span class="total-price"></span>
-          <button class="empty-cart">Esvaziar carrinho</button>
+          <div class="btns">
+            <a href="pedido.html" target="_blank">
+              <button type="button" class="btn btn-success">Finalizar Compra</button>
+            </a>
+            <button type="button" class="btn btn-danger empty-cart">Limpar Carrinho</button>
+          </div>
         </section>
       </section>
     </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+    <script src="./helpers/fetchItem.js" defer></script>
+    <script src="./helpers/fetchProducts.js" defer></script>
+    <script src="./helpers/saveCartItems.js" defer></script>
+    <script src="./helpers/getSavedCartItems.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

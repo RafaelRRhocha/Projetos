@@ -50,7 +50,9 @@ function cartItemClickListener(event) {
 function createCartItemElement({ sku, name, salePrice }) {
   const li = document.createElement('li');
   li.className = 'cart__item';
-  li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
+  li.innerText = `
+  ${name}
+  Valor: $${salePrice}`;
   li.addEventListener('click', cartItemClickListener);
   return li;
 }
@@ -92,8 +94,8 @@ function createProductItemElement({ sku, name, image, salePrice }) {
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createProductImageElement(image));
   section.appendChild(createCustomElement('span', 'item__title', name));
-  section.appendChild(createCustomElement('span', 'item__title', salePrice));
-  const btn = createCustomElement('button', 'item__add', 'Adicionar ao carrinho!');
+  section.appendChild(createCustomElement('span', 'item__price', salePrice));
+  const btn = createCustomElement('button', 'item__add', 'Comprar');
   btn.addEventListener('click', addToCart);
   btn.id = sku;
   section.appendChild(btn);

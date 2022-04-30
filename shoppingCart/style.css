@@ -31,16 +31,6 @@ body {
   padding-left: 30px;
 }
 
-.container-cartTitle {
-  position: relative;
-  display: none;
-  align-items: center;
-  background-color: rgb(10, 118, 79);
-  width: 40%;
-  height: 100%;
-  margin-left: 30px;
-}
-
 .material-icons {
   color: white;
   user-select: none;
@@ -51,39 +41,14 @@ body {
   color: green;
 }
 
-.container-cartTitle span {
-  z-index: 1;
-}
-
-.container-cartTitle:after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 61.5%;
-  width: 39.5%;
-  height: 15px;
-  background: rgb(10, 118, 79);
-  transform: skew(-45deg);
-  z-index: 0;
-}
-
-.container-cartTitle:before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  right: 61.5%;
-  width: 39.5%;
-  height: 15px;
-  background: rgb(10, 118, 79);
-  transform: skew(45deg);
-  z-index: 0;
-}
-
-.container-cartTitle .cart__title {
+header a {
   color: white;
-  font-size: 20px;
-  padding-left: 35px;
-  font-weight: 700;
+  margin-left: 40px;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .container {
@@ -98,7 +63,7 @@ body {
 
 .items {
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 80%;
   flex-wrap: wrap;
   justify-content: center;
   margin: 40px 0;
@@ -118,6 +83,11 @@ body {
 
 .item .item__sku {
   display: none;
+}
+
+.item__price {
+  text-align: center;
+  padding: 5px;
 }
 
 .item .item__title {
@@ -144,7 +114,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin: 10px, auto;
-  padding: 10px;
+  padding: 3px;
   color: white;
   transition: all 0.3s ease;
 }
@@ -159,10 +129,11 @@ body {
 
 .cart {
   display: none;
-  flex-basis: 32%;
+  flex-basis: 40%;
   flex-flow: column wrap;
   background-color: aquamarine;
-  height: 100vh;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 .cart .cart__items {
@@ -173,12 +144,10 @@ body {
   gap: 10px;
 }
 
-.empty-cart {
-  width: 170px;
-  height: 35px;
-  margin: 0 auto;
-  border: 2px solid rgb(5, 52, 219);
-  background-color: rgb(249, 249, 246);
+.btns {
+  position: absolute;
+  top: 470px;
+  right: 140px;
 }
 
 .total-price {
@@ -189,7 +158,5 @@ body {
 .count {
   text-align: center;
   color: white;
-  background-color: red;
   padding: 5px;
-  border-radius: 50%;
 }
