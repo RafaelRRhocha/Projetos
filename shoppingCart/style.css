@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --light: #fff;
+  --title: #009188;
+  --btn: #00A98F;
+  --hover: #32CBA5;
+  --cart: #C8FAE0;
+}
 
 * {
-  box-sizing: border-box;
-  font-family: Epilogue, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   list-style: none;
 }
 
 body {
-  background-color: rgb(246, 246, 246);
+  background-color: var(--light);
+  font-family: Epilogue, sans-serif;
 }
 
 .header {
@@ -26,28 +33,28 @@ body {
 }
 
 .title {
-  color: rgb(241, 241, 238);
+  color: var(--light);
   font-size: 30px;
   padding-left: 30px;
 }
 
 .material-icons {
-  color: white;
+  color: var(--light);
   user-select: none;
   cursor: pointer;
 }
 
 .material-icons:hover {
-  color: green;
+  color: var(--btn);
 }
 
 header a {
-  color: white;
+  color: var(--light);
   margin-left: 40px;
 }
 
 header a:hover {
-  color: white;
+  color: var(--light);
   text-decoration: underline;
 }
 
@@ -58,7 +65,7 @@ header a:hover {
 }
 
 .title strong {
-  color: rgb(0, 169, 143);
+  color: var(--title);
 }
 
 .items {
@@ -109,7 +116,7 @@ header a:hover {
 }
 
 .item .item__add {
-  background-color: rgb(10, 118, 79);
+  background-color: var(--btn);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -124,14 +131,16 @@ header a:hover {
 }
 
 .item .item__add:hover {
-  background-color: green;
+  background-color: var(--hover);
+  color: black;
 }
 
 .cart {
   display: none;
+  user-select: none;
   flex-basis: 40%;
   flex-flow: column wrap;
-  background-color: aquamarine;
+  background-color: var(--cart);
   max-height: 400px;
   overflow-y: scroll;
 }
@@ -158,6 +167,6 @@ header a:hover {
 
 .count {
   text-align: center;
-  color: white;
+  color: var(--light);
   padding: 5px;
 }
