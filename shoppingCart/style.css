@@ -146,13 +146,14 @@ header a:hover {
 
 .btns {
   position: absolute;
-  top: 470px;
+  top: 500px;
   right: 140px;
 }
 
 .total-price {
-  text-align: center;
-  margin-bottom: 15px;
+  position: absolute;
+  right: 240px;
+  top: 470px;
 }
 
 .count {
