@@ -40,7 +40,7 @@ async function getPrice() {
     total += 0;
   }
 
-  amount.innerText = `Valor Total: $${total}`;
+  amount.innerText = `Valor Total: $${total.toFixed(2)}`;
 }
 
 async function getLength() {
