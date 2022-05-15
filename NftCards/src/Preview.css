@@ -1,0 +1,94 @@
+.card-preview {
+  background: #023031;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  width: 50%;
+}
+
+.h1-card-preview {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  margin: 24px;
+  text-align: center;
+}
+
+.border-preview {
+  background: #036b52;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 500px;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.name-card-preview {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  margin: 25px;
+  text-align: center;
+}
+
+.image-preview {
+  left: 100px;
+  margin: 15px;
+  position: relative;
+  width: 100px;
+}
+
+.description-card-preview {
+  font-weight: 500;
+  margin: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.card-attr-preview {
+  background: white;
+  color: black;
+  margin: 10px;
+}
+
+.attr-preview {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rare-card-preview, .trunfo-card-preview {
+  font-weight: 700;
+  margin: 15px;
+  text-align: center;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+}
+
+.filtros h2 {
+  color: #444955;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.name-filter, .filterRare {
+  background: white;
+  border: none;
+  border-bottom: 1px solid #a1a8b5;
+  color: #444955;
+  height: 40px;
+  outline: none;
+  padding: 12px;
+  user-select: none;
+  width: 180px;
+}
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  font-family: Epilogue , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+form {
+  background: white;
+  color: #444955;
+  padding: 6px 36px;
+  position: relative;
+  width: 50%;
+}
+
+form > div {
+  padding: 10px;
+}
+
+form h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+label, textarea {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 5px;
+  overflow: hidden;
+  padding: 6px 36px;
+  resize: none;
+}
+
+.inputs, textarea, select {
+  background: white;
+  border: none;
+  border-bottom: 1px solid #a1a8b5;
+  color: #444955;
+  height: 40px;
+  outline: none;
+  padding: 12px;
+  user-select: none;
+  width: 80%;
+}
+
+.checkbox {
+  border-style: none;
+  color: #444955;
+  outline: none;
+  padding: 12px;
+}
+
+.checkbox label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.save-btn {
+  align-items: center;
+  background: rgb(0, 59, 229);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 40px;
+}
+
+.save-btn:disabled {
+  opacity: 0.3;
+}
+
+.save-btn:hover {
+  background: rgb(32, 82, 227);
+  cursor: pointer;
+}
+
+.save-btn:hover:disabled {
+  background: rgb(0, 59, 229);
+  opacity: 0.3;
+}
