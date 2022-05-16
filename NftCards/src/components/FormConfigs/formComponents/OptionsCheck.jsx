@@ -34,7 +34,7 @@ export default class OptionsCheck extends React.Component {
                 value={ cardTrunfo }
                 onChange={ onInputChange }
               />
-              Super Trunfo Trybe
+              Special Card
             </label>
           </div>
         ) : (

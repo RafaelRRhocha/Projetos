@@ -17,12 +17,42 @@
 
 .border-preview {
   background: #036b52;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   border-radius: 10px;
-  color: white;
+  color: black;
   height: 500px;
   margin: 0 auto;
   width: 350px;
+}
+
+.image-preview {
+  position: absolute;
+  height: 490px;
+  width: 340px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.image-preview:hover {
+  opacity: .5;
+  transform: translateX(30%);
+}
+
+.hover-preview {
+  display: none;
+  position: absolute;
+  height: 490px;
+  width: 340px;
+  background: #ffc107;
+  transition: .5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+  z-index: -1;
+}
+
+.hover-preview:hover {
+  display: block;
+  transform: perspective(2000px) rotateY(0deg);
 }
 
 .name-card-preview {
@@ -31,13 +61,6 @@
   line-height: 29px;
   margin: 25px;
   text-align: center;
-}
-
-.image-preview {
-  left: 100px;
-  margin: 15px;
-  position: relative;
-  width: 100px;
 }
 
 .description-card-preview {
