@@ -1,6 +1,11 @@
+:root {
+  --bkg: #1A1A1D;
+  --font: #F9EAFF;
+}
+
 .card-preview {
-  background: #023031;
-  color: white;
+  background: #1D1D20;
+  color: var(--font);
   display: flex;
   flex-direction: column;
   max-width: 50%;
@@ -16,10 +21,11 @@
 }
 
 .border-preview {
-  background: #036b52;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(222,78,211,1) 71%, rgba(125,122,165,1) 100%);
   border: 5px solid #ffffff;
   border-radius: 10px;
-  color: black;
+  --font: #F9EAFF;
   height: 500px;
   margin: 0 auto;
   width: 350px;
@@ -33,26 +39,20 @@
   transition: .5s;
 }
 
-.image-preview:hover {
-  opacity: .5;
-  transform: translateX(30%);
-}
-
 .hover-preview {
-  display: none;
   position: absolute;
   height: 490px;
   width: 340px;
   background: #ffc107;
   transition: .5s;
-  transform-origin: left;
+  transform-origin: 3cm 2px;
   transform: perspective(2000px) rotateY(-90deg);
-  z-index: -1;
+  z-index: 1;
 }
 
-.hover-preview:hover {
-  display: block;
+.border-preview:hover .hover-preview {
   transform: perspective(2000px) rotateY(0deg);
+  opacity: .8;
 }
 
 .name-card-preview {
@@ -72,7 +72,7 @@
 
 .card-attr-preview {
   background: white;
-  color: black;
+  --font: #F9EAFF;
   margin: 10px;
 }
 
@@ -88,30 +88,3 @@
   margin: 15px;
   text-align: center;
 }
-
-.filtros {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 15px;
-}
-
-.filtros h2 {
-  color: #444955;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 29px;
-}
-
-.name-filter, .filterRare {
-  background: white;
-  border: none;
-  border-bottom: 1px solid #a1a8b5;
-  color: #444955;
-  height: 40px;
-  outline: none;
-  padding: 12px;
-  user-select: none;
-  width: 180px;
-}
-

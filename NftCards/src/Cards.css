@@ -60,29 +60,3 @@
   margin: 15px;
   text-align: center;
 }
-
-.filtros {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 15px;
-}
-
-.filtros h2 {
-  color: #444955;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 29px;
-}
-
-.name-filter, .filterRare {
-  background: white;
-  border: none;
-  border-bottom: 1px solid #a1a8b5;
-  color: #444955;
-  height: 40px;
-  outline: none;
-  padding: 12px;
-  user-select: none;
-  width: 180px;
-}

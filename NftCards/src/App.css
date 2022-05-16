@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap') ;
 
+:root {
+  --bkg: #111113;
+  --font: #F9EAFF;
+}
+
 * {
   box-sizing: border-box;
   font-family: Epilogue , sans-serif;
@@ -10,7 +15,7 @@
 }
 
 .main-content {
-  background-color: white;
+  background-color: var(--bkg);
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -18,8 +23,8 @@
 }
 
 form {
-  background: white;
-  color: #444955;
+  background-color: var(--bkg);
+  color: var(--font);
   padding: 6px 36px;
   position: relative;
   width: 50%;
@@ -50,10 +55,10 @@ label, textarea {
 }
 
 .inputs, textarea, select {
-  background: white;
+  background: var(--bkg);
   border: none;
   border-bottom: 1px solid #a1a8b5;
-  color: #444955;
+  color: var(--font);
   height: 40px;
   outline: none;
   padding: 12px;
@@ -63,7 +68,7 @@ label, textarea {
 
 .checkbox {
   border-style: none;
-  color: #444955;
+  color: var(--font);
   outline: none;
   padding: 12px;
 }
@@ -77,10 +82,10 @@ label, textarea {
 
 .save-btn {
   align-items: center;
-  background: rgb(0, 59, 229);
+  background: #DE4ED3;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: #000;
   display: flex;
   margin: 0 auto;
   padding: 12px 40px;
@@ -90,12 +95,38 @@ label, textarea {
   opacity: 0.3;
 }
 
+.save-btn:disabled:hover {
+  background: #DE4ED3;
+}
+
 .save-btn:hover {
-  background: rgb(32, 82, 227);
+  background: #7D7AA5;
   cursor: pointer;
 }
 
-.save-btn:hover:disabled {
-  background: rgb(0, 59, 229);
-  opacity: 0.3;
+.filtros {
+  color: var(--font);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.filtros h2 {
+  color: var(--font);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.name-filter, .filterRare {
+  background-color: var(--bkg);
+  border: none;
+  border-bottom: 1px solid #a1a8b5;
+  height: 40px;
+  outline: none;
+  padding: 12px;
+  user-select: none;
+  width: 180px;
 }
