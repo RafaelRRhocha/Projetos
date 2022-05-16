@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class FilterName extends React.Component {
@@ -18,7 +17,3 @@ export default class FilterName extends React.Component {
   }
 }
 
-FilterName.propTypes = {
-  filterName: PropTypes.string.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};

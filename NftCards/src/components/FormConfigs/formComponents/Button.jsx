@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class Button extends React.Component {
@@ -21,8 +20,3 @@ export default class Button extends React.Component {
     );
   }
 }
-
-Button.propTypes = {
-  isSaveButtonDisabled: PropTypes.bool.isRequired,
-  onSaveButtonClick: PropTypes.func.isRequired,
-};

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class FilterRare extends React.Component {
@@ -21,8 +20,3 @@ export default class FilterRare extends React.Component {
     );
   }
 }
-
-FilterRare.propTypes = {
-  filterRare: PropTypes.string.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};

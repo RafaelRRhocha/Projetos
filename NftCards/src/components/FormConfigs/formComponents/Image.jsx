@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class Image extends React.Component {
@@ -22,8 +21,3 @@ export default class Image extends React.Component {
     );
   }
 }
-
-Image.propTypes = {
-  cardImage: PropTypes.string.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};

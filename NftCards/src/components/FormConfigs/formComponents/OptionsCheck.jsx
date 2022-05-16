@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class OptionsCheck extends React.Component {
@@ -45,10 +44,3 @@ export default class OptionsCheck extends React.Component {
     );
   }
 }
-
-OptionsCheck.propTypes = {
-  cardRare: PropTypes.string.isRequired,
-  cardTrunfo: PropTypes.bool.isRequired,
-  hasTrunfo: PropTypes.bool.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};

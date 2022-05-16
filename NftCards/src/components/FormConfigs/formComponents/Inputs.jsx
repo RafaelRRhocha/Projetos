@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import TextArea from './TextArea';
 
@@ -83,12 +82,3 @@ export default class Inputs extends React.Component {
     );
   }
 }
-
-Inputs.propTypes = {
-  cardName: PropTypes.string.isRequired,
-  cardDescription: PropTypes.string.isRequired,
-  cardAttr1: PropTypes.string.isRequired,
-  cardAttr2: PropTypes.string.isRequired,
-  cardAttr3: PropTypes.string.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};

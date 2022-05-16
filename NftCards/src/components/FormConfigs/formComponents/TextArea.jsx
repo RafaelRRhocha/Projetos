@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class TextArea extends React.Component {
@@ -20,8 +19,3 @@ export default class TextArea extends React.Component {
     );
   }
 }
-
-TextArea.propTypes = {
-  cardDescription: PropTypes.string.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};
