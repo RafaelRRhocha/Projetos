@@ -24,7 +24,6 @@ export default class Card extends React.Component {
               <img
                 className="image-preview"
                 src={cardImage}
-                alt={cardName}
                 data-testid="image-card"
               />
               <div className="hover-preview">
@@ -65,44 +64,44 @@ export default class Card extends React.Component {
           <section className="card">
             <h1 className="h1-card">Pré-visualização</h1>
             <div className="border">
-              <header>
-                <h2 className="name-card" data-testid="name-card">
-                  {cardName}
-                </h2>
-              </header>
               <img
                 className="image"
                 src={cardImage}
                 alt={cardName}
                 data-testid="image-card"
               />
-              <p className="description-card" data-testid="description-card">
-                {cardDescription}
-              </p>
-              <div className="card-attr">
-                <p data-testid="attr1-card">{cardAttr1}</p>
-                <p data-testid="attr2-card">{cardAttr2}</p>
-                <p data-testid="attr3-card">{cardAttr3}</p>
-              </div>
-              <p className="rare-card" data-testid="rare-card">
-                Raridade: {cardRare}
-              </p>
-              {cardTrunfo && (
-                <p className="trunfo-card" data-testid="trunfo-card">
-                  Super Trunfo
+              <div className="hover">
+                <h2 className="name-card" data-testid="name-card">
+                    {cardName}
+                  </h2>
+                <p className="description-card" data-testid="description-card">
+                  {cardDescription}
                 </p>
-              )}
-              {!preview && (
-                <button
-                  className="save-btn"
-                  name={cardName}
-                  data-testid="delete-button"
-                  onClick={deleteButtonClick}
-                  type="button"
-                >
-                  Excluir
-                </button>
-              )}
+                <div className="card-attr">
+                  <p data-testid="attr1-card">{cardAttr1}</p>
+                  <p data-testid="attr2-card">{cardAttr2}</p>
+                  <p data-testid="attr3-card">{cardAttr3}</p>
+                </div>
+                <p className="rare-card" data-testid="rare-card">
+                  Raridade: {cardRare}
+                </p>
+                {cardTrunfo && (
+                  <p className="trunfo-card" data-testid="trunfo-card">
+                    Super Trunfo
+                  </p>
+                )}
+                {!preview && (
+                  <button
+                    className="save-btn"
+                    name={cardName}
+                    data-testid="delete-button"
+                    onClick={deleteButtonClick}
+                    type="button"
+                  >
+                    Excluir
+                  </button>
+                )}
+              </div>
             </div>
           </section>
         )}

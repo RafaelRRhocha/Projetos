@@ -30,11 +30,30 @@
 }
 
 .image {
-  left: 100px;
-  margin: 15px;
-  position: relative;
-  width: 100px;
+  position: absolute;
+  height: 490px;
+  width: 340px;
+  overflow: hidden;
+  transition: .5s;
 }
+
+.hover {
+  position: absolute;
+  height: 490px;
+  width: 340px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(222,78,211,1) 71%, rgba(125,122,165,1) 100%);
+  transition: .5s;
+  transform-origin: 3cm 2px;
+  transform: perspective(2000px) rotateY(-90deg);
+  z-index: 1;
+}
+
+.border:hover .hover {
+  transform: perspective(2000px) rotateY(0deg);
+  opacity: .8;
+}
+
 
 .description-card {
   font-weight: 500;
