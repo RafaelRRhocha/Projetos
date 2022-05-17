@@ -22,6 +22,26 @@
   width: 100%;
 }
 
+.header-content nav {
+  background-color: var(--bkg);
+  color: var(--font);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+}
+
+.div-header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-content nav a {
+  color: var(--font);
+}
+
 form {
   background-color: var(--bkg);
   color: var(--font);

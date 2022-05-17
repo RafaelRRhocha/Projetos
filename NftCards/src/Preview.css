@@ -43,7 +43,8 @@
   position: absolute;
   height: 490px;
   width: 340px;
-  background: #ffc107;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(222,78,211,1) 71%, rgba(125,122,165,1) 100%);
   transition: .5s;
   transform-origin: 3cm 2px;
   transform: perspective(2000px) rotateY(-90deg);

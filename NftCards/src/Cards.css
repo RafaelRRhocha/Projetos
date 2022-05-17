@@ -11,7 +11,8 @@
 }
 
 .border {
-  background: #036b52;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(222,78,211,1) 71%, rgba(125,122,165,1) 100%);
   border: 5px solid #023031;
   border-radius: 10px;
   color: white;
