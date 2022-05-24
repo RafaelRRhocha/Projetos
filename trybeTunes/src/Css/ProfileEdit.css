@@ -1,0 +1,68 @@
+.edit-full-profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 80px;
+}
+
+.edit-full-profile label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-profile {
+  background-color: var(--bkLogin);
+  border: none;
+  border-bottom: 2px solid var(--wh);
+  color: var(--wh);
+  font-size: 16px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 20px;
+  width: 300px;
+}
+
+.textarea-profile {
+  background-color: var(--bkLogin);
+  border: none;
+  border-bottom: 1px solid var(--wh);
+  color: var(--wh);
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding: 20px;
+  resize: none;
+  width: 300px;
+}
+
+.button-profile {
+  background-color: var(--bkLogin);
+  border: 1px solid var(--pinkLogin);
+  color: var(--pinkLogin);
+  margin: 20px;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.button-profile:disabled {
+  opacity: 0.3;
+}
+
+.button-profile:hover {
+  background: var(--pinkLogin);
+  box-shadow: 0 0 5px var(--pinkLogin) , 0 0 25px var(--pinkLogin) , 0
+    0 50px var(--pinkLogin);
+  color: var(--bkLogin);
+  cursor: pointer;
+}
+
+.button-profile:disabled:hover {
+  background-color: var(--bkLogin);
+  border: 1px solid var(--pinkLogin);
+  -webkit-box-reflect: unset;
+  box-shadow: none;
+  color: var(--pinkLogin);
+}

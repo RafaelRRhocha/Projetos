@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap') ;
+
+:root {
+
+  --bkLogin: white;
+
+  --wh: #121214;
+
+  --pinkLogin: #ce6bab;
+
+}
+
+.dark-mode:root {
+
+  --bkLogin: #121214;
+
+  --wh: white;
+}
+
+body {
+  background-color: var(--bkLogin);
+  box-sizing: border-box;
+  color: var(--wh);
+  font-family: Sniglet , sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.music-girl {
+  height: 640px;
+}
+
+.login-form {
+  left: 50%;
+  position: absolute;
+  top: 35%;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-name-input {
+  background-color: var(--bkLogin);
+  border: none;
+  border-bottom: 2px solid var(--wh);
+  color: var(--wh);
+  font-size: 16px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 20px;
+  width: 300px;
+}
+
+.login-name-input::placeholder {
+  color: var(--wh);
+}
+
+.login-name-input:active {
+  background-color: var(--bkLogin);
+  border: none;
+  border-bottom: 2px solid var(--wh);
+}
+
+.btn-login {
+  background-color: var(--bkLogin);
+  border: 1px solid var(--pinkLogin);
+  color: var(--pinkLogin);
+  margin-left: 20px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.btn-login:disabled {
+  opacity: 0.3;
+}
+
+.btn-login:hover {
+  background: var(--pinkLogin);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px var(--pinkLogin) , 0 0 25px var(--pinkLogin) , 0
+    0 50px var(--pinkLogin);
+  color: var(--bkLogin);
+  cursor: pointer;
+}
+
+.btn-login:disabled:hover {
+  background-color: var(--bkLogin);
+  border: 1px solid var(--pinkLogin);
+  -webkit-box-reflect: unset;
+  box-shadow: none;
+  color: var(--pinkLogin);
+}
+
