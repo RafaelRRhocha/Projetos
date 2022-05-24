@@ -9,4 +9,4 @@ git checkout -b main
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:rafaelrrhocha/Projetos/trybeTunes.git main:gh-pages
+git push -f git@github.com:RafaelRRhocha/Projetos.git main:gh-pages
