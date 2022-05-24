@@ -49,21 +49,21 @@ export default class Header extends React.Component {
           <Link
             className="link-header"
             data-testid="link-to-search"
-            to="/search"
+            to="/Projetos/trybeTunes/search/"
           >
             Pesquisar
           </Link>
           <Link
             className="link-header"
             data-testid="link-to-favorites"
-            to="/favorites"
+            to="/Projetos/trybeTunes/favorites/"
           >
             Favoritos
           </Link>
           <Link
             className="link-header"
             data-testid="link-to-profile"
-            to="/profile"
+            to="/Projetos/trybeTunes/profile/"
           >
             Ver Perfil
           </Link>

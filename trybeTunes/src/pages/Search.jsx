@@ -73,7 +73,7 @@ export default class Search extends React.Component {
                 {albuns.map((item, i) => (
                   <Link
                     key={ i }
-                    to={ `/album/${item.collectionId}` }
+                    to={ `/Projetos/trybeTunes/album/${item.collectionId}` }
                     data-testid={ `link-to-album-${item.collectionId}` }
                     className="div-link-preview-albuns"
                   >
