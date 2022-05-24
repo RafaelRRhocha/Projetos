@@ -30,7 +30,7 @@ export default class Profile extends React.Component {
           <div data-testid="page-profile" className="profile">
             <div className="profile-edit">
               <img src={ image } alt="imagem de perfil" data-testid="profile-image" />
-              <Link className="link-profile" to="/profile/edit">Editar perfil</Link>
+              <Link className="link-profile" to="/Projetos/trybeTunes/profile/edit/">Editar perfil</Link>
             </div>
             <div className="infos-profile">
               <p>Nome:</p>

@@ -46,7 +46,7 @@ export default class ProfileEdit extends React.Component {
     const { history } = this.props;
     this.setState({ loading: true });
     await updateUser(user);
-    history.push('/profile');
+    history.push('/Projetos/trybeTunes/profile/');
   };
 
   render() {
@@ -121,7 +121,7 @@ export default class ProfileEdit extends React.Component {
                 disabled={ !disabled }
                 onClick={ this.saveProfile }
               >
-                Editar perfil
+                Salvar Perfil
               </button>
             </form>
           </div>
